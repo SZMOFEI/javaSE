@@ -1,6 +1,10 @@
 package com.mofei.demo03;
 
+
+import com.mofei.demo03.reforence.User;
+
 import java.math.BigDecimal;
+import java.util.*;
 
 /**
  * @author mofei
@@ -8,6 +12,30 @@ import java.math.BigDecimal;
  */
 public class 变量的概述及格式 {
     public static void main(String[] args) {
+        //testBaseDataType();
+
+        //2.定义四种引用变量
+
+        String s = "hello String ";
+        System.out.println("字符串s = " + s);
+        int[] arr = {1,2,3,4,5};
+        for (int i : arr) {
+            System.out.println("i = " + i);
+        }
+        List<int[]> list = Arrays.asList(arr);
+        Map map = new HashMap<Integer,String>();
+        map.put(1,"陈工");
+        map.put(2,"李工");
+        map.put(3,"秦工");
+        System.out.println("map = " + map.get(1));
+
+        User user = new User();
+        user.setAge(15);
+        System.out.println("user = " + user);
+    }
+
+
+    private static void testBaseDataType() {
         //1.定义八种基本变量
         int a = 12000;
         byte b = 1;
@@ -68,6 +96,5 @@ public class 变量的概述及格式 {
 
         //扩展常用的金额数
         BigDecimal decimal = new BigDecimal(10);
-        //2.定义四种引用变量
     }
 }
