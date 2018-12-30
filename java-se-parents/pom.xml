@@ -5,8 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mofei</groupId>
-    <artifactId>crazy-java</artifactId>
+    <artifactId>java-se-parents</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>se-crazy-series</module>
+        <module>se-quick-series</module>
+        <module>se-day32-series</module>
+    </modules>
+    
 </project>
