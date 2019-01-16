@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入W3C规定的实例文档的名称空间. -->
+<books 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.itheima.com/ee23"
+xsi:schemaLocation="http://www.itheima.com/ee23 book.xsd"
+>
+	<book bid="1">
+		<name>Java编程思想</name>	
+		<author>James</author>
+		<price>109</price>
+		
+	</book>
+	
+	
+</books>

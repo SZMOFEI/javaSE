@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books SYSTEM "book.dtd" >
+<books>
+  <book bid="b1">
+    <name>java入门</name>
+    <author>James</author>
+    <price>哈哈哈哈</price>
+  </book>
+</books>

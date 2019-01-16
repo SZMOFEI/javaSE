@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--这是一个描述学生的xml  -->
+<students>
+	<student id="s1">
+		<name>张三</name>
+		<age>18</age> 
+		
+	</student>
+</students>
+
+

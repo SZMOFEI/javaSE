@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.itheima.com/ee23" 
+elementFormDefault="qualified">
+	<element name="books">
+		<!--复杂类型  -->
+		<complexType>
+			<!--sequence:属性  -->
+			<sequence maxOccurs="1" minOccurs="1">
+				<element name="book">
+					<complexType>
+						<sequence>
+								<element name="name" type="string"></element>
+								<element name="author" type="string"></element>
+								<element name="price" type="double"></element>
+						</sequence>
+						<attribute name="bid" type="int" use="optional"/>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books xmlns="http://www.itheima.com/ee23" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.itheima.com/ee23 book.xsd ">
+	<book>
+		<name>name</name>
+		<author>author</author>
+		<price>0.0</price>
+	</book>
+</books>

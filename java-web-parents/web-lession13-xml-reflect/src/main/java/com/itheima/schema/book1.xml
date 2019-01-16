@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - 查出Schema文档,找出根元素
+- 根元素来自哪个名称空间
+- 这个名称空间和哪个xsd文件对应(指定约束的路径)
+- schemaLocation不是关键字，来自一个标准的名称空间
+ -->
+<books
+	xmlns="http://www.itheima.com/ee23"
+	xsi:schemaLocation="http://www.itheima.com/ee23 book.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+>
+
+<book>
+
+	<name></name>
+	<author></author>
+	<price>100</price>
+</book>
+</books>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books [
+<!ELEMENT books (book+)>
+<!ELEMENT book (name,author,price)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!ATTLIST book bid ID #REQUIRED>
+]>
+
+<books>
+<book bid="b1">
+	<name></name>
+	<author></author>
+	<price></price>
+</book>
+	
+</books>

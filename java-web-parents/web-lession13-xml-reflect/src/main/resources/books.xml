@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<apple>
+		<name>苹果</name>
+		<price>18000</price>
+	</apple>
+	
+	<book id="b1" a="11">
+		<name>四十二章经</name>
+		<price>1200</price>
+		<author>隔壁王叔叔</author>
+	</book>
+	
+	<book id="b2">
+		<name>辟邪剑法</name>
+		<price>10</price>
+		<author>小李子</author>
+	</book>
+	
+</books>

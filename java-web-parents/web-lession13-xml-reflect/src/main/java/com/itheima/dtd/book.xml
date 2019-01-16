@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE books SYSTEM "book.dtd">
+
+<books>
+	<book bid="b1">
+		<name>Java编程思想</name>
+		<author>James</author>
+		<price>109</price>
+		
+	</book>
+	<book bid="b2">
+		<name>Java编程思想</name>
+		<author>James</author>
+		<price>109</price>
+	</book>
+	<book bid="b3">
+		<name>中国人</name>
+		<author>莫非</author>
+		<price>120</price>
+	</book>
+</books>

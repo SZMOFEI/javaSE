@@ -12,6 +12,7 @@
         <module>web-lession1-html</module>
         <module>web-lession2-css</module>
         <module>web-lession6-jdbc</module>
+        <module>web-lession13-xml-reflect</module>
     </modules>
 
 
