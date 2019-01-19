@@ -1,4 +1,4 @@
-package com.mofei;
+package com.mofei.string;
 
 import org.junit.Test;
 
@@ -84,14 +84,59 @@ public class StringDemo {
     private char[] bubble(char[] chars) {
         for (int i = 0; i < chars.length - 1; i++) {
             for (int j = 0; j < chars.length - i - 1; j++) {
-                char temp ;
-                if (chars[j]>chars[j+1]){
+                char temp;
+                if (chars[j] > chars[j + 1]) {
                     temp = chars[j];
-                    chars[j] = chars[j+1];
-                    chars[j+1] = temp;
+                    chars[j] = chars[j + 1];
+                    chars[j + 1] = temp;
                 }
             }
         }
         return chars;
+    }
+
+    @Test
+    public void fun07() {
+        String s = "abcde";
+        int n = s.length();
+
+        while (n-- != 0) {
+            System.out.println("n = " + n);
+        }
+    }
+
+    protected boolean equalsme(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o instanceof String) {
+            String newS = (String) o;
+            //1.判断长度一致
+        }
+        return false;
+    }
+
+    int time = 50000;
+
+    @Test
+    public  void testString() {
+        String s = "";
+        long begin = System.currentTimeMillis();
+        for (int i = 0; i < time; i++) {
+            s += "java";
+        }
+        long over = System.currentTimeMillis();
+        System.out.println("操作" + s.getClass().getName() + "类型使用的时间为：" + (over - begin) + "毫秒");
+    }
+
+    @Test
+    public  void testStringBuilder () {
+        StringBuilder s = new StringBuilder();
+        long begin = System.currentTimeMillis();
+        for(int i=0; i<time; i++){
+            s.append("java");
+        }
+        long over = System.currentTimeMillis();
+        System.out.println("操作"+s.getClass().getName()+"类型使用的时间为："+(over-begin)+"毫秒");
     }
 }
