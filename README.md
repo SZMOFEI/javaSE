@@ -10,6 +10,7 @@
     -   se-crazy-series         疯狂Java系列的实践代码
     -   se-day32-series         完整的day32系列的实践代码
     -   se-quick-series         完整的快速系列的实践代码
+    -   se-sgg-series           尚硅谷系列的实践代码
 - java-ssh-project   struts spring hebernite 项目
 - java-ssm-project   springmvc spring mybatis 项目
 - java-web-parents   java web的父工程pom
