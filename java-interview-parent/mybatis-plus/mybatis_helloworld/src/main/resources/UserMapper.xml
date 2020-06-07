@@ -7,12 +7,12 @@
     select * from user where id = #{id}
   </select>
     <select id="getUserByNameAndId" resultType="User">
-    select * from user where id = #{id} and name = #{name}
+    select * from user where id = ${id} and name = #{name}
   </select>
     <select id="getUserByMap" resultType="User">
-    select * from user where id = #{id} and name = #{name}
+    select * from ${tableName} where id = #{id} and name = #{name}
   </select>
-    <select id="getUserByTO" resultType="User" >
+    <select id="getUserByTO" resultType="User">
     select * from user where id = #{id} and name = #{name}
   </select>
 
@@ -33,4 +33,33 @@
     <delete id="deleteUser">
         delete from  user where id = #{id}
     </delete>
+    <resultMap id="myResult" type="com.mofei.entity.User">
+        <id column="id" property="id"/>
+        <result column="nick_name" property="nickName"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <association property="userDetail"
+                     javaType="com.mofei.entity.UserDetail">
+            <id column="did" property="id"/>
+            <result column="dname" property="name"/>
+        </association>
+    </resultMap>
+    <select id="getUserWithDetail" resultMap="myResult">
+        SELECT
+	u.id,
+	u.name name,
+	u.gender gender,
+	u.email email,
+	u.nick_name nick_name,
+	u.create_time create_time,
+	u.update_time update_time,
+	ud.id did,
+  ud.name dname
+FROM
+	`user` u,
+	user_detail ud
+WHERE
+	u.d_id = ud.id
+AND u.id = #{id}
+    </select>
 </mapper>

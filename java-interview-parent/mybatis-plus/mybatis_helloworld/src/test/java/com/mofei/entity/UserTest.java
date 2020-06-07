@@ -11,6 +11,8 @@ import org.junit.Test;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author mofei
@@ -25,14 +27,15 @@ public class UserTest {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 //        User userById = mapper.getUserById(1L);
 //        User userById = mapper.getUserByNameAndId("JOM",1L);
-//        Map<String, Object> map = new HashMap<>();
-//        map.put("name","JOM");
-//        map.put("id",1);
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", "JOM");
+        map.put("id", 1);
+        map.put("tableName", "user");
 
         UserTO to = new UserTO();
         to.setId(1L);
         to.setName("JOM ");
-        User userById = mapper.getUserByTO(to);
+        User userById = mapper.getUserByMap(map);
         System.out.println("userById = " + userById);
     }
 
@@ -50,6 +53,7 @@ public class UserTest {
         sqlSession.commit();
         sqlSession.close();
     }
+
     @Test
     public void testUpdate() throws IOException {
         SqlSessionFactory sqlSesstionFactory = getSqlSesstionFactory();
@@ -61,7 +65,9 @@ public class UserTest {
         mapper.updateUser(userById);
         sqlSession.commit();
         sqlSession.close();
-    }    @Test
+    }
+
+    @Test
     public void testDelete() throws IOException {
         SqlSessionFactory sqlSesstionFactory = getSqlSesstionFactory();
         SqlSession sqlSession = sqlSesstionFactory.openSession();
@@ -81,4 +87,15 @@ public class UserTest {
 
     //todo 如果传入的是一个Collection List Array 如果处理
     //todo 如果传入的是一个Collection List Array 对象， 又是 如果处理
+
+
+    @Test
+    public void testGetUserDetail() throws IOException {
+        SqlSessionFactory sqlSesstionFactory = getSqlSesstionFactory();
+        SqlSession sqlSession = sqlSesstionFactory.openSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = mapper.getUserWithDetail(1L);
+        System.out.println("user = " + user);
+        System.out.println("user.getUserDetail() = " + user.getUserDetail());
+    }
 }

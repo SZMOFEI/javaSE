@@ -32,6 +32,7 @@ mappers       - mapper         package
     <settings>
         <!--匹配数据库下划线和大小写-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="useActualParamName" value="true"/>
     </settings>
 <!--别名处理器， 不用每次结果集都需要写引用全类名
 typeAliases只能单个起别名， 但是实际项目中有需要批量起别名

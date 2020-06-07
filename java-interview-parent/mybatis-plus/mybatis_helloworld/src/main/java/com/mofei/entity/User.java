@@ -18,4 +18,5 @@ public class User implements Serializable {
     private String nickName;
     private Date createTime;
     private Date updateTime;
+    private UserDetail userDetail ;
 }
