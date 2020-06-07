@@ -3,7 +3,6 @@ package com.mofei.api.java.util;
 import com.mofei.api.Person;
 import org.junit.Test;
 
-import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 

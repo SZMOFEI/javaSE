@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--总结：
+使用的是xml的方式去配置， 主要config-mybatis.xml配置文件 : 包括数据库 ，事务管理器和驱动来声明sqlSessionFactory
+第二个重要的内容是声明sql.xml 主要声明每一个sql的定义
+-->
+<!--所有的配置属性有哪些
+databaseIdProvider
+properties  - property 数据源使用外部资源的
+settings - setting         typeAliases - typeAliase
+typeHandlers - typeHandler     objectFactory
+objectWrapperFactory       reflectorFactory          plugins- plugin
+environments  - environment       transactionManager        dataSource
+mappers       - mapper         package
+-->
+<configuration>
+    <!--properties 的两个属性
+        url: 指定路径下去读取， 比如本地文件路径
+        resource: 类路径下
+        可以试一下， 优先使用哪种方式
+    -->
+    <properties resource="db.properties">
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </properties>
+
+    <!--settings 比较重要的配置。 可以直接影响mybatis的执行过程
+1.mapUnderscoreToCamelCase 数据库下划线是否匹配驼峰规则 ， 默认是false
+    -->
+    <settings>
+        <!--匹配数据库下划线和大小写-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+<!--别名处理器， 不用每次结果集都需要写引用全类名
+typeAliases只能单个起别名， 但是实际项目中有需要批量起别名
+package 针对包起别名
+-->
+    <!--java 类型和数据库类型之间的桥梁， 新版本已经自动注册了各种时间类型处理器 。 如何查看-->
+    <!--plugins 对运行原理以后 ， 插件机制拦截四大插件 ，实际就是一个动态代理-->
+    <!--Executor-->
+    <!--parameterHandler-->
+    <!--resultSetHandler-->
+    <!--StatementHandler-->
+    <typeAliases >
+        <package name="com.mofei.entity"/>
+    </typeAliases>
+
+    <!--environments 可以是多个环境，不过限制spring已经有这个功能， spring的功能是否也是这种实现呢
+    如何自定义事务管理器
+    如何自定义数据源
+    -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--支持多数据库厂商
+        这个地方需要安装Oracle 数据库 ， 然后进行Oracle 数据库驱动的集成  , 然后进行查询
+    -->
+
+    <!--将sql映射到配置文件中
+    resource ：  引入类路径
+    url: 磁盘地址
+    class:  类名 注册接口 ， 接口路径需要同一目录下 和同名
+    -->
+    <mappers>
+        <mapper resource="UserMapper.xml"/>
+    </mappers>
+</configuration>
