@@ -14,10 +14,10 @@ C:案例演示
 ```
 class Demo1_Polymorphic {
 	public static void main(String[] args) {
-		Cat c = new Cat();
+		com.mofei.spring.demo.Cat c = new com.mofei.spring.demo.Cat();
 		c.eat();
 
-		Animal a = new Cat();//父类引用指向子类对象
+		Animal a = new com.mofei.spring.demo.Cat();//父类引用指向子类对象
 		a.eat();//猫吃鱼,理解父债子还
 	}
 }
@@ -28,7 +28,7 @@ class Animal {
 	}
 }
 
-class Cat extends Animal {
+class com.mofei.spring.demo.Cat extends Animal {
 	public void eat() {
 		System.out.println("猫吃鱼");
 	}
@@ -227,24 +227,24 @@ B:案例演示
 D:案例演示:
 
 	method(Animal a)
-	method(Cat c)
+	method(com.mofei.spring.demo.Cat c)
 代码演示如下:
 ```
 class Demo4_Animal {
 	public static void main(String[] args) {
-		//Cat c1 = new Cat();
+		//com.mofei.spring.demo.Cat c1 = new com.mofei.spring.demo.Cat();
 		//c1.eat();
 		
-		method(new Cat());
+		method(new com.mofei.spring.demo.Cat());
 		method(new Dog());
 //开发的是很少在创建对象的时候用父类引用指向子类对象,直接创建子类对象更方便,可以使用子类中的特有属性和行为
 
 	}
 	
-	//Cat c = new Dog();//狗是一只猫,这是错误的,如果把狗强转成猫就会出现类型转换异常,ClassCastException
+	//com.mofei.spring.demo.Cat c = new Dog();//狗是一只猫,这是错误的,如果把狗强转成猫就会出现类型转换异常,ClassCastException
 	
 	/*
-	public static void method(Cat c) {			
+	public static void method(com.mofei.spring.demo.Cat c) {			
 		c.eat();
 	}
 
@@ -253,10 +253,10 @@ class Demo4_Animal {
 	}
 	*/
 	
-	public static void method(Animal a) {//即Animal a = new Cat();当作参数的时候用多态最好,因为扩展性强
+	public static void method(Animal a) {//即Animal a = new com.mofei.spring.demo.Cat();当作参数的时候用多态最好,因为扩展性强
 		
-		if (a instanceof Cat) {//关键字 instanceof 判断前边的引用是否是后边的数据类型
-			Cat c = (Cat)a;
+		if (a instanceof com.mofei.spring.demo.Cat) {//关键字 instanceof 判断前边的引用是否是后边的数据类型
+			com.mofei.spring.demo.Cat c = (com.mofei.spring.demo.Cat)a;
 			c.eat();
 			c.catchMouse();
 			
@@ -277,7 +277,7 @@ class Animal {
 	}
 }
 
-class Cat extends Animal {
+class com.mofei.spring.demo.Cat extends Animal {
 	public void eat() {
 		System.out.println("猫吃鱼");
 	}
@@ -397,7 +397,7 @@ class Demo1_Abstract {
 	public static void main(String[] args) {
 		//Animal a = new Animal();//错误:Animal是抽象的;无法实例化
 		
-		Animal a = new Cat();//父类引用指向子类对象,子类实例化
+		Animal a = new com.mofei.spring.demo.Cat();//父类引用指向子类对象,子类实例化
 		a.eat();//猫吃鱼
 	}
 }
@@ -411,9 +411,9 @@ abstract class Animal {//抽象类
 	}
 }
 
-//abstract class Cat extends Animal {//抽象类的子类,要么是抽象类,要么重写抽象类里面的所有抽象方法
-abstract class Cat extends Animal {
-	public Cat() {
+//abstract class com.mofei.spring.demo.Cat extends Animal {//抽象类的子类,要么是抽象类,要么重写抽象类里面的所有抽象方法
+abstract class com.mofei.spring.demo.Cat extends Animal {
+	public com.mofei.spring.demo.Cat() {
 		super();
 	}
 	
@@ -519,7 +519,7 @@ A:案例演示:
 ```
 class Test1_Animal {
 	public static void main(String[] args) {
-		Cat c = new Cat("加菲",8);
+		com.mofei.spring.demo.Cat c = new com.mofei.spring.demo.Cat("加菲",8);
 		System.out.println(c.getName() + "..." + c.getAge());
 		c.eat();
 		c.catchMouse();
@@ -571,10 +571,10 @@ abstract class Animal {
 	}
 }
 
-class Cat extends Animal {
-	public Cat(){}//空参
+class com.mofei.spring.demo.Cat extends Animal {
+	public com.mofei.spring.demo.Cat(){}//空参
 
-	public Cat(String name,int age) {//有参
+	public com.mofei.spring.demo.Cat(String name,int age) {//有参
 		//super(name,age);//调用父类有参构造来给父类成员变量赋值,然后通过继承的getter方法获取,
 		
 		//也可以通过在父类中提供方法来给成员变量赋值,如下:
@@ -934,7 +934,7 @@ A:案例演示:
 ```
 class Test1_Animal {
 	public static void main(String[] args) {
-		Cat c = new Cat("加菲",8);
+		com.mofei.spring.demo.Cat c = new com.mofei.spring.demo.Cat("加菲",8);
 		c.eat();
 		c.sleep();
 
@@ -981,10 +981,10 @@ interface Jumping {//跳高的接口
 	public void jump();//跳高是后天的定义在接口里,至于怎么跳,看接口实现类即子类
 }
 
-class Cat extends Animal {//抽象类子类
-	public Cat() {}//空参构造
+class com.mofei.spring.demo.Cat extends Animal {//抽象类子类
+	public com.mofei.spring.demo.Cat() {}//空参构造
 
-	public Cat(String name,int age) {//有参构造
+	public com.mofei.spring.demo.Cat(String name,int age) {//有参构造
 		super(name,age);
 	}
 
@@ -997,7 +997,7 @@ class Cat extends Animal {//抽象类子类
 	}
 }
 
-class JumpCat extends Cat implements Jumping {//继承抽象类子类并实现接口复写接口方法
+class JumpCat extends com.mofei.spring.demo.Cat implements Jumping {//继承抽象类子类并实现接口复写接口方法
 	public JumpCat() {}					//空参构造
 
 	public JumpCat(String name,int age) {//有参构造

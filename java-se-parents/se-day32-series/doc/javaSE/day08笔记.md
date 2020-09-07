@@ -64,7 +64,7 @@ C:案例演示:
 
 	使用继承前:猫狗类里面都写一样的代码,复用性太差,如下:
 ```
-class Cat {
+class com.mofei.spring.demo.Cat {
 	String color;//动物的颜色
 	int leg;//动物腿的个数
 
@@ -107,7 +107,7 @@ class Animal {
 	}
 }
 
-class Cat extends Animal {
+class com.mofei.spring.demo.Cat extends Animal {
 	
 }
 
@@ -631,7 +631,7 @@ B:案例演示
 ```
 class Test5_Animal {
 	public static void main(String[] args) {
-		Cat c1 = new Cat("花",4);
+		com.mofei.spring.demo.Cat c1 = new com.mofei.spring.demo.Cat("花",4);
 		System.out.println(c1.getColor() + "..." + c1.getLeg());
 		c1.eat();
 		c1.catchMouse();
@@ -675,10 +675,10 @@ class Animal {
 	}
 }
 
-class Cat extends Animal {
-	public Cat() {}	//空参构造
+class com.mofei.spring.demo.Cat extends Animal {
+	public com.mofei.spring.demo.Cat() {}	//空参构造
 
-	public Cat(String color,int leg) {//有参构造
+	public com.mofei.spring.demo.Cat(String color,int leg) {//有参构造
 		super(color,leg);
 	}
 

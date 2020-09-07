@@ -11,6 +11,14 @@
     <modules>
         <module>interview-core-sort</module>
         <module>design-pattern</module>
+        <module>spring-demo</module>
+        <module>spring-demo/spring_0002</module>
+        <module>spring-demo/spring_0002</module>
+        <module>spring-demo/spring_0003autoconfig</module>
+        <module>spring-demo/spring_0004java_config</module>
+        <module>spring-demo/spring_0005xml_config</module>
+        <module>aiguigu-spring-demo</module>
+        <module>aiguigu-spring-demo/spring-1</module>
     </modules>
 
 

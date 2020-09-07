@@ -6,7 +6,7 @@ import com.mofei.lession6.util.JDBCUtil;
 import java.sql.*;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2018/12/30 21:18
  */
 public class UserDao {

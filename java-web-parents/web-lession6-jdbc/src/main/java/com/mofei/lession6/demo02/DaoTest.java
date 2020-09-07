@@ -5,7 +5,7 @@ import com.mofei.lession6.demo02.domain.User;
 import org.junit.Test;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2018/12/30 21:26
  */
 public class DaoTest {

@@ -3,7 +3,7 @@ package com.mofei.lession6.util;
 import java.sql.*;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2018/12/30 22:07
  */
 public class JDBCUtil {

@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/6/6 23:55
  */
 public class UserTest {
@@ -61,7 +61,7 @@ public class UserTest {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User userById = mapper.getUserById(3L);
         userById.setGender(1);
-        userById.setEmail("mofei@163.com");
+        userById.setEmail("com.mofei@163.com");
         mapper.updateUser(userById);
         sqlSession.commit();
         sqlSession.close();

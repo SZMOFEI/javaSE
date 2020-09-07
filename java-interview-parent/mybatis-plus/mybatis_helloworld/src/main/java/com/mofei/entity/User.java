@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/6/6 23:48
  */
 @Data

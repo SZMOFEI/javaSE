@@ -4,7 +4,7 @@ import java.sql.*;
 
 /**
  * JDBC的入门案例
- * @author mofei
+ * @author com.mofei
  * @date 2018/12/30 18:17
  */
 public class Demo01 {

@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/3/27 7:33
  */
 public class ArraysTest {

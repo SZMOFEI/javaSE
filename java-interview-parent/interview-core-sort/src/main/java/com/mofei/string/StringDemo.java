@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2019/1/18 22:54
  */
 public class StringDemo {

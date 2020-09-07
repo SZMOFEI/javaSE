@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/3/25 23:50
  */
 public class CollectionApiTest {

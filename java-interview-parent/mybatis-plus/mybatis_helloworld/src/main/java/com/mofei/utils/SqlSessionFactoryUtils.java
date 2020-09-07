@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/6/8 16:56
  */
 public class SqlSessionFactoryUtils {

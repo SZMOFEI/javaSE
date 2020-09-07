@@ -1,6 +1,6 @@
 package com.mofei.api;
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/3/26 0:05
  */
 //求职者的实体类

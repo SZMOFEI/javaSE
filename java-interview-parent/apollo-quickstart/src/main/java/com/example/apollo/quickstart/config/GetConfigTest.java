@@ -4,7 +4,7 @@ import com.ctrip.framework.apollo.Config;
 import com.ctrip.framework.apollo.ConfigService;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/3/18 8:37
  */
 public class GetConfigTest {

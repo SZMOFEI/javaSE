@@ -16,7 +16,7 @@ import java.util.stream.Stream;
  * 11.clear()   12.equals   13.hashCode()  14.spritIterator     15.stream()
  * 16.prepallStream()
  *
- * @author mofei
+ * @author com.mofei
  * @date 2019/1/19 9:38
  */
 public class ListDemo {

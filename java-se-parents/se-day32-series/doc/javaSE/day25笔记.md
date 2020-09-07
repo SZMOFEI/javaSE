@@ -646,7 +646,7 @@ D:案例演示:
 
 	动物抽象类:public abstract Animal { public abstract void eat(); }
 	具体狗类:public class Dog extends Animal {...}
-	具体猫类:public class Cat extends Animal {...}
+	具体猫类:public class com.mofei.spring.demo.Cat extends Animal {...}
 	开始,在测试类中每个具体的内容自己创建对象,但是,创建对象的工作如果比较麻烦,就需要有人专门做这个事情,
 	所以就制造了一个专门的类来创建对象,如下面的工厂类
 代码演示如下:
@@ -657,7 +657,7 @@ public abstract class Animal {//看到下面不同的类都有public修饰就知
 }
 
 //猫狗实现类
-public class Cat extends Animal {//客户端不需要再负责对象的创建,从而明确了各个类的职责
+public class com.mofei.spring.demo.Cat extends Animal {//客户端不需要再负责对象的创建,从而明确了各个类的职责
 	@Override
 	public void eat() {
 		System.out.println("猫吃鱼");
@@ -677,8 +677,8 @@ public class AnimalFactory {
 		return new Dog();
 	}
 	
-	public static Cat createCat() {
-		return new Cat();
+	public static com.mofei.spring.demo.Cat createCat() {
+		return new com.mofei.spring.demo.Cat();
 	}*/
 	
 	//这个静态工厂类负责所有对象的创建,如果有新的对象增加,就需要不断的修改工厂类,不利于后期的维护:
@@ -686,7 +686,7 @@ public class AnimalFactory {
 		if("dog".equals(name)) {
 			return new Dog();
 		}else if("cat".equals(name)) {
-			return new Cat();
+			return new com.mofei.spring.demo.Cat();
 		}else {
 			return null;
 		}
@@ -701,7 +701,7 @@ public class Test {
 		Dog d = (Dog) AnimalFactory.createAnimal("dog");
 		d.eat();//狗吃肉
 		
-		Cat c = (Cat) AnimalFactory.createAnimal("cat");
+		com.mofei.spring.demo.Cat c = (com.mofei.spring.demo.Cat) AnimalFactory.createAnimal("cat");
 		c.eat();//猫吃鱼
 	}
 }
@@ -728,7 +728,7 @@ D:案例演示:
 	动物抽象类:public abstract Animal { public abstract void eat(); }
 	工厂接口：public interface Factory {public abstract Animal createAnimal();}
 	具体狗类：public class Dog extends Animal {...}
-	具体猫类：public class Cat extends Animal {...}
+	具体猫类：public class com.mofei.spring.demo.Cat extends Animal {...}
 	
 	开始,在测试类中每个具体的内容自己创建对象,但是,创建对象的工作如果比较麻烦,
 	就需要有人专门做这个事情,所以就制造了一个专门的类来创建对象,发现每次修改代码太麻烦,
@@ -747,7 +747,7 @@ public abstract class Animal {//看到下面不同的类都有public修饰就知
 }
 
 //猫狗实现类
-public class Cat extends Animal {
+public class com.mofei.spring.demo.Cat extends Animal {
 	@Override
 	public void eat() {
 		System.out.println("猫吃鱼");
@@ -769,7 +769,7 @@ public interface Factory {
 public class CatFactory implements Factory {
 	@Override
 	public Animal createAnimal() {
-		return new Cat();
+		return new com.mofei.spring.demo.Cat();
 	}
 }
 public class DogFactory implements Factory {

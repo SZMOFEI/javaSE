@@ -18,7 +18,7 @@ import java.util.Set;
  * 8.remove(Object obj)
  * 9.Set<Entry<K,V>>  keySet();
  * 10.values()
- * @author mofei
+ * @author com.mofei
  * @date 2020/4/4 0:05
  */
 public class HashMapTest {

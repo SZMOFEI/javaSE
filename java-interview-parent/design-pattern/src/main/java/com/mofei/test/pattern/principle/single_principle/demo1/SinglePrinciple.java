@@ -1,7 +1,7 @@
 package com.mofei.test.pattern.principle.single_principle.demo1;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/4/19 4:32
  */
 public class SinglePrinciple {

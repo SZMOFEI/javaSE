@@ -6,7 +6,7 @@ import com.mofei.entity.UserTO;
 import java.util.Map;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/6/6 23:52
  */
 public interface UserMapper {

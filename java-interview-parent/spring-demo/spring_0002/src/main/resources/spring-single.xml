@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--我们可以将这个bean理解为我们的javaBean，其中两个property标签即表示给User类中的name和age属性赋值！-->
+    <!--singleton 表示单例模式，每次从容器中获取的都是这个实例-->
+    <!--prototype 表示多实例模式，每次从容器中获取的都会实例化一个-->
+    <bean id="user" class="com.mofei.User" scope="singleton">
+        <property name="name" value="张三"/>
+        <property name="age" value="18"/>
+    </bean>
+</beans>

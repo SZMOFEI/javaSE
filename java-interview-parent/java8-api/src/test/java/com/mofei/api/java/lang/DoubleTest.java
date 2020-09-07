@@ -3,7 +3,7 @@ package com.mofei.api.java.lang;
 import org.junit.Test;
 
 /**
- * @author mofei
+ * @author com.mofei
  * @date 2020/3/27 7:33
  */
 public class DoubleTest {
