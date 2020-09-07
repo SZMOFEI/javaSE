@@ -3,6 +3,28 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="user" class="com.mofei.User">
-        <constructor-arg name="name" value="mofei"></constructor-arg>
+       <property name="name" value="mofei"></property>
+    </bean>
+
+    <bean id="car" class="com.mofei.Car">
+        <constructor-arg value="Auto" index="0"></constructor-arg>
+        <constructor-arg value="Dazhong" index="1"></constructor-arg>
+        <constructor-arg value="$400" index="2"></constructor-arg>
+    </bean>
+
+    <bean id="car2" class="com.mofei.Car">
+        <constructor-arg value="Auto" index="0" type="java.lang.String"></constructor-arg>
+        <constructor-arg   type="java.lang.String">
+<!--            <value><![CDATA[_^DFDSFSDJFK>]]></value>-->
+            <value>djfdjkdj………………^</value>
+        </constructor-arg>
+        <constructor-arg value="120" index="2" type="int"></constructor-arg>
+    </bean>
+
+    <bean id="person" class="com.mofei.Person">
+        <property name="name" value="mofei">
+        </property>
+        <property name="age" value="11"></property>
+        <property name="car" ref="car2"></property>
     </bean>
 </beans>

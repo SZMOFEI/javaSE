@@ -46,6 +46,8 @@
 
     <modules>
         <module>spring-1</module>
+        <module>spring2-autowired</module>
+        <module>spring3-scope</module>
     </modules>
 
 </project>

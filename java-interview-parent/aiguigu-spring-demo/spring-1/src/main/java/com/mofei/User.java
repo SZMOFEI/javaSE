@@ -4,6 +4,7 @@ public class User {
     private String name;
 
     public User() {
+        System.out.println("执行无参数构造");
     }
 
     public String getName() {
@@ -11,6 +12,8 @@ public class User {
     }
 
     public void setName(String name) {
+
+        System.out.println("执行了设置值的方法");
         this.name = name;
     }
 
@@ -19,6 +22,7 @@ public class User {
     }
 
     public User(String name) {
+        System.out.println("执行 有参数构造");
         this.name = name;
     }
 }

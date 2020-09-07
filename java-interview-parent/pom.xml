@@ -19,6 +19,7 @@
         <module>spring-demo/spring_0005xml_config</module>
         <module>aiguigu-spring-demo</module>
         <module>aiguigu-spring-demo/spring-1</module>
+        <module>aiguigu-spring-demo/spring2-autowired</module>
     </modules>
 
 
