@@ -45,9 +45,11 @@
     </dependencyManagement>
 
     <modules>
-        <module>spring-1</module>
+        <module>spring1</module>
         <module>spring2-autowired</module>
         <module>spring3-scope</module>
+        <module>spring4-property</module>
+        <module>spring5-cycle</module>
     </modules>
 
 </project>
