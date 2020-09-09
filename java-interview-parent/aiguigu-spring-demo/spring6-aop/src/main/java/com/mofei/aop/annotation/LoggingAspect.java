@@ -3,6 +3,7 @@ package com.mofei.aop.annotation;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -12,6 +13,7 @@ import java.util.List;
 @Component
 //声明是一个切面 ，可以集中声明横切功能的声明， 比如日志功能 ， 验证参数的切面
 @Aspect
+@Order(1)
 public class LoggingAspect {
     /*    */
 

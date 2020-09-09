@@ -18,7 +18,7 @@ public class SpringAopAnnotationTest {
 
     @Test
     public void testAspect() {
-       calculatorImpl.add(1, 2);
+       calculatorImpl.add(1, -2);
         calculatorImpl.div(20, 2);
     }
 }
