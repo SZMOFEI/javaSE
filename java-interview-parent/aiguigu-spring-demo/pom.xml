@@ -50,6 +50,7 @@
         <module>spring3-scope</module>
         <module>spring4-property</module>
         <module>spring5-cycle</module>
+        <module>spring6-aop</module>
     </modules>
 
 </project>

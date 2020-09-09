@@ -20,6 +20,8 @@
         <module>aiguigu-spring-demo</module>
         <module>aiguigu-spring-demo/spring-1</module>
         <module>aiguigu-spring-demo/spring2-autowired</module>
+        <module>aiguigu-spring-demo/spring-aop</module>
+        <module>aiguigu-spring-demo/spring6-aop/aop-dynamic</module>
     </modules>
 
 
