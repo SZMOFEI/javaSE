@@ -2,6 +2,7 @@ package com.mofei;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author mofei
@@ -12,6 +13,7 @@ public class BookServiceImpl implements BookService {
     @Autowired
     private BookDao bookDao;
 
+    @Transactional
     @Override
     public int processOder(String username, String isbn) {
         //根据isbn查询价格
