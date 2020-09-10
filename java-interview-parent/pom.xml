@@ -18,10 +18,7 @@
         <module>spring-demo/spring_0004java_config</module>
         <module>spring-demo/spring_0005xml_config</module>
         <module>aiguigu-spring-demo</module>
-        <module>aiguigu-spring-demo/spring-1</module>
-        <module>aiguigu-spring-demo/spring2-autowired</module>
-        <module>aiguigu-spring-demo/spring-aop</module>
-        <module>aiguigu-spring-demo/spring6-aop/aop-dynamic</module>
+        <module>aiguigu-spring-demo/spring7-jdbctemplate</module>
     </modules>
 
 

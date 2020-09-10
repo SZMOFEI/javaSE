@@ -51,6 +51,7 @@
         <module>spring4-property</module>
         <module>spring5-cycle</module>
         <module>spring6-aop</module>
+        <module>spring7-jdbctemplate</module>
     </modules>
 
 </project>
