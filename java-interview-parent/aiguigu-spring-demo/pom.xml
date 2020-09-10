@@ -52,6 +52,7 @@
         <module>spring5-cycle</module>
         <module>spring6-aop</module>
         <module>spring7-jdbctemplate</module>
+        <module>spring8-tx</module>
     </modules>
 
 </project>

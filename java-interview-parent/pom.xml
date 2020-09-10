@@ -19,6 +19,7 @@
         <module>spring-demo/spring_0005xml_config</module>
         <module>aiguigu-spring-demo</module>
         <module>aiguigu-spring-demo/spring7-jdbctemplate</module>
+        <module>aiguigu-spring-demo/spring-tx</module>
     </modules>
 
 
