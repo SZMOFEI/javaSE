@@ -5,9 +5,23 @@ package com.mofei;
  * @date 2020/9/9 20:42
  */
 public class User {
-    private int id ;
-    private int age ;
+    private int id;
+    private int age;
     private String name;
+
+    public User(int id, int age, String name, String email) {
+        this.id = id;
+        this.age = age;
+        this.name = name;
+        this.email = email;
+    }
+
+    public User() {
+    }
+
+    public User(int id) {
+        this.id = id;
+    }
 
     @Override
     public String toString() {
