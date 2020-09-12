@@ -20,6 +20,7 @@
         <module>aiguigu-spring-demo</module>
         <module>aiguigu-spring-demo/spring7-jdbctemplate</module>
         <module>aiguigu-spring-demo/spring-tx</module>
+        <module>aiguigu-springmvc-demo</module>
     </modules>
 
 
