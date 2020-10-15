@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-source-code001</module>
+        <module>jdk-performance-optimization</module>
     </modules>
     <packaging>pom</packaging>
     <name>tuling-demos</name>
