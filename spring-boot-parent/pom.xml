@@ -6,7 +6,26 @@
 
     <groupId>com.mofei.demo</groupId>
     <artifactId>spring-boot-parent</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>d1-spring-boot-application</module>
+        <module>d2-properties-and-configuration</module>
+        <module>d3-embedded-web-servers</module>
+        <module>d4-spring-mvc</module>
+        <module>d5-testing-with-spring-security</module>
+        <module>d6-http-clients</module>
+        <module>d7-logging</module>
+        <module>d8-data-access</module>
+        <module>d9-database-initialization</module>
+        <module>d10-messaging</module>
+        <module>d11-batch-applications</module>
+        <module>d12-actuator</module>
+        <module>d13-security</module>
+        <module>d14-hot-swapping</module>
+        <module>d15-build</module>
+        <module>d16-traditional-deployment</module>
+    </modules>
 
-    
+
 </project>
