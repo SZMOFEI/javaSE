@@ -1,12 +1,4 @@
+
 spring:
-  application:
-    name: demo-client
-
-eureka:
-  client:
-    serviceUrl:
-      # 注意URL地址需要加上httP:// 协议 .否则无法正常注册
-      defaultZone: http://localhost:8761/eureka/
-
-server:
-  port: 8081
+  profiles:
+    active: demo
