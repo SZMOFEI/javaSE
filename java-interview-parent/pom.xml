@@ -12,6 +12,10 @@
         <module>interview-core-sort</module>
         <module>design-pattern</module>
         <module>refactoring-improving-the-design-of-existing-code</module>
+        <module>aiguigu-spring-demo</module>
+        <module>aiguigu-spring-demo/spring7-jdbctemplate</module>
+        <module>aiguigu-springmvc-demo</module>
+        <module>utils-demo</module>
     </modules>
 
 
