@@ -11,7 +11,7 @@
     <modules>
         <module>interview-core-sort</module>
         <module>design-pattern</module>
-        <module>Refactoring-Improving-the-Design-of-Existing-Code</module>
+        <module>refactoring-improving-the-design-of-existing-code</module>
     </modules>
 
 

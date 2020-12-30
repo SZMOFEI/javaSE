@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Refactoring-Improving-the-Design-of-Existing-Code</artifactId>
+    <artifactId>refactoring-improving-the-design-of-existing-code</artifactId>
 
     <dependencies>
         <dependency>
