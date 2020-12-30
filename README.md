@@ -73,3 +73,11 @@
 # 上一次执行到的部分
 
 开始构建skyway-x 平台基础架构  , 从更高层次开始架构一个项目
+开始构建framework
+开始构建platform
+开始抽取device模块中的framework-jdbc依赖
+开始新建skyway-user-service模块
+
+# 端口安排
+skyway-device-service  8001
+skyway-user-service    8002

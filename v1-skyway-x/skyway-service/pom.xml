@@ -14,5 +14,6 @@
 
     <modules>
         <module>skyway-device-service</module>
+        <module>skyway-user-service</module>
     </modules>
 </project>
