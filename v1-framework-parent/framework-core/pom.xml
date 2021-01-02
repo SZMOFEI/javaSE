@@ -10,6 +10,45 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>framework-core</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.mofei.framework</groupId>
+            <artifactId>framework-api</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>com.mofei.framework</groupId>
+            <artifactId>framework-log</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mofei.framework</groupId>
+            <artifactId>framework-util</artifactId>
+        </dependency>
+
+
+        <!--  <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-freemarker</artifactId>
+          </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

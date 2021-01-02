@@ -77,6 +77,7 @@
 开始构建platform
 开始抽取device模块中的framework-jdbc依赖
 开始新建skyway-user-service模块
+解决device 和user 模块重复依赖web的问题
 
 # 端口安排
 skyway-device-service  8001

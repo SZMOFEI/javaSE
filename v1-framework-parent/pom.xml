@@ -18,28 +18,66 @@
         <module>framework-jdbc</module>
         <module>framework-api</module>
         <module>framework-core</module>
+        <module>framework-web</module>
+        <module>framework-service</module>
+        <module>framework-util</module>
+        <module>framework-log</module>
     </modules>
 
     <properties>
         <druid.version>1.1.10</druid.version>
         <mysql.version>5.1.34</mysql.version>
-        <project.version>1.0-SNAPSHOT</project.version>
+        <skyway-framework.version>1.0-SNAPSHOT</skyway-framework.version>
         <mybatis-plus.version>3.4.1</mybatis-plus.version>
+        <spring-cloud-dependencies.version>Greenwich.RELEASE
+        </spring-cloud-dependencies.version>
     </properties>
 
     <!--项目的版本管理-->
     <dependencyManagement>
         <dependencies>
+            <!--定义springcloud 依赖的版本-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud-dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>com.mofei.framework</groupId>
                 <artifactId>framework-api</artifactId>
-                <version>${project.version}</version>
+                <version>${skyway-framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mofei.framework</groupId>
+                <artifactId>framework-service</artifactId>
+                <version>${skyway-framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mofei.framework</groupId>
+                <artifactId>framework-jdbc</artifactId>
+                <version>${skyway-framework.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.mofei.framework</groupId>
                 <artifactId>framework-core</artifactId>
-                <version>${project.version}</version>
+                <version>${skyway-framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mofei.framework</groupId>
+                <artifactId>framework-util</artifactId>
+                <version>${skyway-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mofei.framework</groupId>
+                <artifactId>framework-log</artifactId>
+                <version>${skyway-framework.version}</version>
             </dependency>
 
             <!--mybatis-plus依赖-->
