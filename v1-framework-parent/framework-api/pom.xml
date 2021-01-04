@@ -9,6 +9,28 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <knife4j.version>3.0.2</knife4j.version>
+    </properties>
+
+
     <artifactId>framework-api</artifactId>
+    <!--增加swagger的配置-->
+    <dependencies>
+
+        <!--knife4j接口文档-->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>${knife4j.version}</version>
+        </dependency>
+
+        <!--如果配置文件配置了开关, 那么就可以使用swagger-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.2.1.RELEASE</version>
+        </dependency>
+    </dependencies>
 
 </project>

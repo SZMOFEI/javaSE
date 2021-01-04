@@ -81,8 +81,8 @@
 - 增加了[Druid](https://www.cnblogs.com/babycomeon/p/11582303.html)数据库连接池 
 - 解决数据源重复配置的问题 [SpringBoot 多项目配置统一、公共属性
 ](https://markix.blog.csdn.net/article/details/102577380)
-- 
-
+- 增加swagger的配置, 支持swagger接口测试 [swagger官方文档](https://doc.xiaominfo.com/knife4j/documentation/get_start.html)
+![](v1-skyway-x\png\swagger.png)
 # 端口安排
 skyway-device-service  8001
 skyway-user-service    8002

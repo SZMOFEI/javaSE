@@ -6,3 +6,6 @@ spring:
   profiles:
     # 包含了druid的数据源配置, 这样不需要每个项目都配置这个数据源
     include: druid
+skyway:
+  switch:
+    swagger-open: true
