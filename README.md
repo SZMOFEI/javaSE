@@ -72,12 +72,13 @@
 
 # 上一次执行到的部分
 
-开始构建skyway-x 平台基础架构  , 从更高层次开始架构一个项目
-开始构建framework
-开始构建platform
-开始抽取device模块中的framework-jdbc依赖
-开始新建skyway-user-service模块
-解决device 和user 模块重复依赖web的问题
+- 开始构建skyway-x 平台基础架构  , 从更高层次开始架构一个项目
+- 开始构建framework
+- 开始构建platform
+- 开始抽取device模块中的framework-jdbc依赖
+- 开始新建skyway-user-service模块
+- 解决device 和user 模块重复依赖web的问题
+- 增加了[Druid](https://www.cnblogs.com/babycomeon/p/11582303.html)数据库连接池 
 
 # 端口安排
 skyway-device-service  8001

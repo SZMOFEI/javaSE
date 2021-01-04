@@ -1,4 +1,4 @@
-package com.mofei.skyway.device.config;
+package com.mofei.skyway.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.autoconfigure.ConfigurationCustomizer;
