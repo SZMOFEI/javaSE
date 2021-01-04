@@ -79,6 +79,9 @@
 - 开始新建skyway-user-service模块
 - 解决device 和user 模块重复依赖web的问题
 - 增加了[Druid](https://www.cnblogs.com/babycomeon/p/11582303.html)数据库连接池 
+- 解决数据源重复配置的问题 [SpringBoot 多项目配置统一、公共属性
+](https://markix.blog.csdn.net/article/details/102577380)
+- 
 
 # 端口安排
 skyway-device-service  8001
