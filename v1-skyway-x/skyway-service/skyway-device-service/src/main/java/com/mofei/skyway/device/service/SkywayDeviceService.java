@@ -1,5 +1,7 @@
 package com.mofei.skyway.device.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mofei.skyway.device.entity.SkywayDevice;
 import com.mofei.skyway.device.mapper.SkywayDeviceMapper;
 import org.springframework.stereotype.Service;
@@ -17,5 +19,9 @@ public class SkywayDeviceService {
 
     public SkywayDevice getById(String id) {
         return skywayDeviceMapper.selectById(id);
+    }
+
+    public Page page() {
+        return skywayDeviceMapper.selectPage(new Page(), new QueryWrapper<>());
     }
 }

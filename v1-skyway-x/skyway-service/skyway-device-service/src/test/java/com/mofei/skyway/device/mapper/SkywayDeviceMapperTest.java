@@ -11,7 +11,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
@@ -41,7 +40,7 @@ import static org.junit.Assert.assertEquals;
  * @author mofei
  * @date 2020/12/28 9:51
  */
-@Transactional //增加事务,避免脏数据
+//@Transactional //增加事务,避免脏数据
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class SkywayDeviceMapperTest {
