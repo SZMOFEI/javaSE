@@ -1,4 +1,4 @@
-package com.mofei.skyway.user;
+package com.mofei;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

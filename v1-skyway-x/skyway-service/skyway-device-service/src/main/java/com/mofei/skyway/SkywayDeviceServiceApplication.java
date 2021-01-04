@@ -1,4 +1,4 @@
-package com.mofei.skyway.device;
+package com.mofei.skyway;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
