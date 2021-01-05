@@ -5,10 +5,13 @@ import com.mofei.skyway.device.entity.SkywayDevice;
 import com.mofei.skyway.device.service.SkywayDeviceService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 /**
  * @author mofei
@@ -18,12 +21,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/admin/device")
 @Api(tags = "OSS-DEVICE", value = "OSS-DEVICE")
 public class DeviceController {
+    private final Logger logger = LoggerFactory.getLogger(DeviceController.class);
     @Autowired
     private SkywayDeviceService skywayDeviceService;
 
     @GetMapping("/page")
     @ApiOperation(value = "获取设备分页的接口")
     public Page<SkywayDevice> pageAll() {
+        logger.info("{}  获取设备分页的接口 !");
         Page page = skywayDeviceService.page();
         return page;
     }

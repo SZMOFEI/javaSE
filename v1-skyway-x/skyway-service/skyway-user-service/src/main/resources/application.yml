@@ -9,3 +9,5 @@ spring:
 skyway:
   switch:
     swagger-open: true
+logging:
+  config: classpath:spring-logback.xml

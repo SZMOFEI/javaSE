@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <include resource="defaults.xml" />
+    <property name="LOG_FILE" value="logs/skyway-oss-user/skyway-oss-user.log"/>
+    <include resource="file-appender.xml" />
+    <include resource="console-appender.xml" />
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
