@@ -4,7 +4,7 @@ import org.junit.Test;
 
 /**
  * @author com.mofei
- * @date 2019/1/19 8:39
+ * @version 2019/1/19 8:39
  * java 方法到底是值传递还是方法传递呢?
  * 首先明确是值传递
  * 1.传递的是基本参数

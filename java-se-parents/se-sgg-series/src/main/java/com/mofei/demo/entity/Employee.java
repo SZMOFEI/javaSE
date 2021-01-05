@@ -2,7 +2,7 @@ package com.mofei.demo.entity;
 
 /**
  * @author com.mofei
- * @date 2020/3/11 17:04
+ * @version 2020/3/11 17:04
  */
 public class Employee {
     private String name;

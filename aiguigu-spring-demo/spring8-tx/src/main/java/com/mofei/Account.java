@@ -2,7 +2,7 @@ package com.mofei;
 
 /**
  * @author mofei
- * @date 2020/9/10 20:35
+ * @version 2020/9/10 20:35
  */
 public class Account {
     private String username;

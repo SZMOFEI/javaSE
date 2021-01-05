@@ -17,7 +17,7 @@ import java.util.stream.Stream;
  * 16.prepallStream()
  *
  * @author com.mofei
- * @date 2019/1/19 9:38
+ * @version 2019/1/19 9:38
  */
 public class ListDemo {
     List<Integer> intList = new ArrayList<Integer>();

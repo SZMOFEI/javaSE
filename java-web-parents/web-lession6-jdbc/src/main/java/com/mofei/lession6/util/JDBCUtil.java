@@ -4,7 +4,7 @@ import java.sql.*;
 
 /**
  * @author com.mofei
- * @date 2018/12/30 22:07
+ * @version 2018/12/30 22:07
  */
 public class JDBCUtil {
     private static Connection connection = null;

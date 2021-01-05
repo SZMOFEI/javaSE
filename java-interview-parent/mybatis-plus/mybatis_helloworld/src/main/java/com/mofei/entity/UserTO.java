@@ -6,7 +6,7 @@ import java.util.Date;
 
 /**
  * @author com.mofei
- * @date 2020/6/7 0:54
+ * @version 2020/6/7 0:54
  */
 @Data
 public class UserTO {

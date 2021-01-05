@@ -4,7 +4,7 @@ import org.junit.Test;
 
 /**
  * @author mofei
- * @date 2020/9/9 14:43
+ * @version 2020/9/9 14:43
  */
 public class JDKDynamicTest {
     @Test

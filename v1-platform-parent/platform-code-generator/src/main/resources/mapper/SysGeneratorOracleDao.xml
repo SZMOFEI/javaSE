@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mofei.generator.dao.SysGeneratorOracleDao">
+
+      <resultMap type="java.util.Map" id="tableList">
+	          <result property="tableName" column="TABLENAME"/>
+	          <result property="engine" column="ENGINE"/>
+	          <result property="tableComment" column="TABLECOMMENT"/>
+      </resultMap>
+      
+      <resultMap type="java.util.Map" id="tableColumns">
+	          <result property="columnName" column="COLUMNNAME"/>
+	          <result property="columnComment" column="COLUMNCOMMENT"/>
+	          <result property="dataType" column="DATATYPE"/>
+	          <result property="columnKey" column="COLUMNKEY"/>
+      </resultMap>
+    
+	<select id="queryList" resultMap="tableList">
+	       SELECT * FROM (
+	             select ROWNUM  RN,t.table_name as tableName,
+		          t.table_type as engine,
+		          t.comments   as tableComment
+		          from user_tab_comments t where 1=1 
+			<if test="tableName != null and tableName.trim() != ''">
+				and table_Name like  '%${tableName}%'
+			</if>
+			 <if test="offset != null and limit != null">
+				and rownum  <![CDATA[<=]]> (#{ offset} + #{ limit})
+			 </if>
+			   order by table_name)
+			 <if test="offset != null">
+				 WHERE RN > #{offset}
+			   </if>
+	</select> 
+	
+	<select id="queryTotal" resultType="int">
+		select count(*) from user_tab_comments where 1=1
+		<if test="tableName != null and tableName.trim() != ''">
+			and table_name like '%${tableName}%'
+		</if> 
+	</select> 
+	
+	<select id="queryTable" resultType="map">
+		   select t.table_name as tableName,
+	          t.table_type as engine,
+	          t.comments   as tableComment
+	          from user_tab_comments t where  table_name = #{tableName}
+	</select> 
+	
+	<select id="queryColumns"  resultMap="tableColumns">
+ 			select a.*, 
+			  decode (a.columnname,(select cu.column_name
+			  from user_cons_columns cu, user_constraints au
+			 where cu.constraint_name = au.constraint_name
+			   and au.constraint_type = 'P'
+			   and au.table_name = #{tableName}),'PRI','')  as columnKey, '' as extra
+			  from (select c.column_name as columnName,
+			               c.comments    as columnComment,
+			               u.DATA_TYPE   as dataType
+			          from user_col_comments c, user_tab_columns u
+			         where c.Table_Name = #{tableName}
+			           and u.TABLE_NAME = #{tableName}
+			           and u.COLUMN_NAME = c.column_name) a
+	</select>
+</mapper>

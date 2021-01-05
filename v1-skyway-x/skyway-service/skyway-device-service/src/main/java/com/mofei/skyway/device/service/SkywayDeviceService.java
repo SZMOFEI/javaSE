@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * @author mofei
- * @date 2020/12/29 20:21
+ * @version 2020/12/29 20:21
  */
 @Service
 public class SkywayDeviceService {

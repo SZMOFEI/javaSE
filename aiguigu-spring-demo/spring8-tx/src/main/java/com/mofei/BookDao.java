@@ -2,7 +2,7 @@ package com.mofei;
 
 /**
  * @author mofei
- * @date 2020/9/10 20:36
+ * @version 2020/9/10 20:36
  */
 public interface BookDao {
     String getPriceByIsbn(String isbn);

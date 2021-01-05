@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @author mofei
- * @date 2020/12/28 9:48
+ * @version 2020/12/28 9:48
  */
 @Mapper
 public interface SkywayDeviceMapper extends BaseMapper<SkywayDevice> {

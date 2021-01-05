@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author com.mofei
- * @date 2020/3/18 9:51
+ * @version 2020/3/18 9:51
  */
 @RestController
 public class HelloController {

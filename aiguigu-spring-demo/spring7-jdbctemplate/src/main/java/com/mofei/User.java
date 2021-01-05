@@ -2,7 +2,7 @@ package com.mofei;
 
 /**
  * @author mofei
- * @date 2020/9/9 20:42
+ * @version 2020/9/9 20:42
  */
 public class User {
     private int id;

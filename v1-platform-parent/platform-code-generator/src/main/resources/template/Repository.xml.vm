@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="${package}.repository.${className}Repository">
+
+	<!-- 通用查询映射结果 -->
+    <resultMap type="${package}.entity.${className}" id="BaseResultMap">
+#foreach($column in $columns)
+        <result property="${column.attrname}" column="${column.columnName}" jdbcType="${column.dataType}"/>
+#end
+    </resultMap>
+
+	<!-- 通用查询结果列 -->
+	<sql id="Base_Column_List" >
+#foreach($column in $columns)
+#if($velocityCount != $columns.size())
+	    ${column.columnName} AS ${column.attrname},
+#else
+		${column.columnName} AS ${column.attrname}
+#end
+#end
+	</sql>
+</mapper>

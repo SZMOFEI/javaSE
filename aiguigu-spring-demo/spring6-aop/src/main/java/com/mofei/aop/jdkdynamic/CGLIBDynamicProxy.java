@@ -12,7 +12,7 @@ import java.util.List;
  * cglib 的动态代理实现
  *
  * @author mofei
- * @date 2020/9/9 14:46
+ * @version 2020/9/9 14:46
  */
 public class CGLIBDynamicProxy implements MethodInterceptor {
     private Object target;

@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @author com.mofei
- * @date 2020/6/6 23:52
+ * @version 2020/6/6 23:52
  */
 public interface UserMapper {
     public User getUserById(Long id );

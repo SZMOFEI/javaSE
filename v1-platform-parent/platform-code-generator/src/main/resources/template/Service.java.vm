@@ -1,0 +1,27 @@
+/**
+ *
+ *  @Title: ${className}Dto.java
+ *  @Package ${package}.controller.dto
+ *  @author ${author}
+ *  @version ${datetime}
+ *  @version V1.0
+ *  @Project:  skyway platform
+ *  @Description: Copyright © 2019 SeiRobotics, All Rights Reserved.
+ *
+ */
+package ${package}.service;
+
+import com.mofei.base.servise.BaseService;
+import ${package}.entity.${className};
+
+/** 
+ *
+ * @Description: ${className}服务接口
+ * @ClassName: I${className}Service 
+ * @author ${author} 
+ * @version ${datetime}
+ * 
+*/
+public interface I${className}Service extends BaseService<${className}> {
+		
+}

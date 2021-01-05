@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 /**
  * @author com.mofei
- * @date 2019/1/18 22:54
+ * @version 2019/1/18 22:54
  */
 public class StringDemo {
     String test = "abcd";

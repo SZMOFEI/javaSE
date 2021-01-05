@@ -10,7 +10,7 @@ import java.util.concurrent.TimeoutException;
 
 /**
  * @author com.mofei
- * @date 2020/4/8 23:46
+ * @version 2020/4/8 23:46
  */
 public class Producer {
     private final static String QUEUE_NAME = "hello";

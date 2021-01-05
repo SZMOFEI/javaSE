@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @author mofei
- * @date 2020/12/28 9:50
+ * @version 2020/12/28 9:50
  */
 @TableName("skyway_device")
 public class SkywayDevice implements Serializable {

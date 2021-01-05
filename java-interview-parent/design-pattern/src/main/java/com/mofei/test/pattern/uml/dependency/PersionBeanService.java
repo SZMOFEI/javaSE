@@ -2,7 +2,7 @@ package com.mofei.test.pattern.uml.dependency;
 
 /**
  * @author com.mofei
- * @date 2020/5/16 21:58
+ * @version 2020/5/16 21:58
  */
 public class PersionBeanService {
     private PersonDao personDao;

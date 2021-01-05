@@ -17,7 +17,7 @@ import java.util.Set;
 
 /**
  * @author com.mofei
- * @date 2020/3/18 9:59
+ * @version 2020/3/18 9:59
  */
 @Configuration
 public class LoggerConfig {

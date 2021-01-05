@@ -10,7 +10,7 @@ import java.util.List;
  * JDK动态代理的方式实现日志记录
  *
  * @author
- * @date 2020/9/9 14:36
+ * @version 2020/9/9 14:36
  */
 public class JDKDynamicProxy implements InvocationHandler {
 

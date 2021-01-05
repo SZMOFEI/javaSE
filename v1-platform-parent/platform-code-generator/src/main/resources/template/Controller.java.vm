@@ -1,0 +1,82 @@
+/** 
+ *
+ *  @Title: ${className}Dto.java
+ *  @Package ${package}.controller.dto
+ *  @author ${author}
+ *  @version ${datetime}
+ *  @version V1.0
+ *  @Project:  skyway platform
+ *  @Description: Copyright © 2019 SeiRobotics, All Rights Reserved.
+ *
+*/ 
+package ${package}.controller;
+
+import java.util.List;
+import javax.validation.constraints.NotNull;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.mofei.base.controller.BaseController;
+import com.mofei.base.exception.DataNotFoundException;
+
+import ${package}.controller.dto.${className}AddInput;
+import ${package}.controller.dto.${className}QryInput;
+import ${package}.controller.dto.${className}QryOutput;
+import ${package}.controller.dto.${className}UpdateInput;
+import ${package}.entity.${className};
+import ${package}.service.I${className}Service;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+/** 
+ *
+ * @Description: ${className}控制类
+ * @ClassName: ${className}Controller 
+ * @author ${author} 
+ * @version ${datetime}
+ * 
+*/
+@Api(tags = {"${className}Contorller Api"})
+@RestController
+@RequestMapping("/${lowername}")
+public class ${className}Controller {
+	
+	@Autowired
+	private I${className}Service ${classname}Service;
+	
+	@ApiOperation(value = "add")
+	@PostMapping("/add")
+	public boolean add(@Validated ${className}AddDto dto) {
+		return ${classname}Service.save(convert(dto));
+	}
+
+	@ApiOperation(value = "delete")
+	@PostMapping("/delete")
+	public void delete(@RequestBody List<$pk.attrType> ids) {
+		${classname}Service.delete(ids,false);
+	}
+	
+	@ApiOperation(value = "detail by id")
+	@GetMapping("/getById")
+	public ${className}QryOutput queryById(@NotNull(message = "ID不能为空") @RequestParam("id") $pk.attrType id) {
+		${className} ${classname} = ${classname}Service.getById(id,false);
+		${className}QryOutput dto = convert(${classname}, ${className}QryOutput.class);
+		return dto;
+	}
+	
+	@ApiOperation(value = "query page  by params")
+	@GetMapping("/query")
+	public Page<${className}OutVo> query(${className}QueryDto dto) {
+		Page<${className}> result = ${classname}Service.queryPage(dto);
+		return convert(result, ${className}QryOutput.class);
+	}
+	
+	@ApiOperation(value = "update")
+	@PutMapping("/update")
+	public boolean update(@Validated ${className}UpdateDto dto) {
+		return ${classname}Service.update(convert(dto),false);
+	}
+}

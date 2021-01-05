@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  * @author com.mofei
- * @date 2020/6/8 16:56
+ * @version 2020/6/8 16:56
  */
 public class SqlSessionFactoryUtils {
 

@@ -2,7 +2,7 @@ package com.mofei;
 
 /**
  * @author mofei
- * @date 2020/9/10 20:34
+ * @version 2020/9/10 20:34
  */
 public class Stock {
     private String isbn;

@@ -1,0 +1,93 @@
+/**
+ *
+ *  @Title: ${className}Dto.java
+ *  @Package ${package}.controller.dto
+ *  @author ${author}
+ *  @version ${datetime}
+ *  @version V1.0
+ *  @Project:  skyway platform
+ *  @Description: Copyright © 2019 SeiRobotics, All Rights Reserved.
+ *
+ */
+package ${package}.entity;
+
+import com.mofei.base.entity.BaseEntity;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+#if($logicDeleted != '')
+import com.baomidou.mybatisplus.annotation.TableLogic;
+#end
+#if(${uselombok} == 'true')
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+#end
+
+/** 
+ *
+ * @Description: ${className}实体类
+ * @ClassName: ${className} 
+ * @author ${author} 
+ * @version ${datetime}
+ * 
+*/
+#if(${uselombok} == 'true')
+@Setter
+@Getter
+@ToString
+#end
+@TableName("${tableName}")
+public class ${className} extends BaseEntity<$pk.attrType>  {
+
+	private static final long serialVersionUID = 1L;
+	
+#foreach ($column in $columns)
+	/**
+	 * $column.comments
+	 */
+#if($column.columnName == $pk.columnName)
+	@TableId(value = "id", type = IdType.AUTO)
+#end
+#if($column.logicDelete != '')
+	@TableLogic
+#end
+#if($column.columnName != $pk.columnName && $column.columnName != $column.attrname)
+	@TableField("${column.columnName}")
+#end
+	private $column.attrType $column.attrname;
+	
+#end
+
+#if(${uselombok} != 'true')
+#foreach ($column in $columns)	
+	/**
+	 * 设置：${column.comments}
+	 */
+	public void set${column.attrName}($column.attrType $column.attrname) {
+		this.$column.attrname = $column.attrname;
+	}
+	
+	/**
+	 * 获取：${column.comments}
+	 */
+	public $column.attrType get${column.attrName}() {
+		return $column.attrname;
+	}	
+#end
+
+    @Override
+    public String toString() {
+        return "${className}{" +
+#foreach ($column in $columns)
+#if($column.columnName == $pk.columnName)
+		"$column.attrname=" + $column.attrname +
+#else
+        ", $column.attrname=" + $column.attrname +
+#end
+#end
+        "}";
+    }
+#end
+}

@@ -84,6 +84,7 @@
 - 增加swagger的配置, 支持swagger接口测试 [swagger官方文档](https://doc.xiaominfo.com/knife4j/documentation/get_start.html)
 ![](v1-skyway-x\png\swagger.png)
 - 处理logback.xml公用配置的问题 https://github.com/spring-projects/spring-boot/blob/master/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/logback/base.xml
+- 解决mybatis-plus自动生成controller ,service , dao ,service,mapper等
 # 端口安排
 skyway-device-service  8001
 skyway-user-service    8002

@@ -2,7 +2,7 @@ package com.mofei.refactor.chapter1.ver1;
 
 /**
  * @author mofei
- * @date 2020/12/30 10:41
+ * @version 2020/12/30 10:41
  */
 import java.util.Enumeration;
 import java.util.Vector;

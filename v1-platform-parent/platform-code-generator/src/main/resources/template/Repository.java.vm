@@ -1,0 +1,27 @@
+/**
+ *
+ *  @Title: ${className}Dto.java
+ *  @Package ${package}.controller.dto
+ *  @author ${author}
+ *  @version ${datetime}
+ *  @version V1.0
+ *  @Project:  skyway platform
+ *  @Description: Copyright © 2019 SeiRobotics, All Rights Reserved.
+ *
+ */
+package ${package}.repository;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import ${package}.entity.${className};
+
+/** 
+ *
+ * @Description: ${className}数据访问层
+ * @ClassName: ${className}Repository 
+ * @author ${author} 
+ * @version ${datetime}
+ * 
+*/
+public interface ${className}Repository extends BaseMapper<${className}> {
+	
+}

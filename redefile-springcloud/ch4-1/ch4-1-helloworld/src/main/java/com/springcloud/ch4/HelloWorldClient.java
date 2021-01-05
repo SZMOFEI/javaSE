@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author mofei
- * @date 2020/10/21 19:50
+ * @version 2020/10/21 19:50
  */
 @FeignClient(name = "githut-client", url = "https://api.github.com", configuration = HelloWorldClientConfig.class)
 public interface HelloWorldClient {

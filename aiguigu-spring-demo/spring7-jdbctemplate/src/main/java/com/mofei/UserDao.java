@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * @author mofei
- * @date 2020/9/10 9:19
+ * @version 2020/9/10 9:19
  */
 
 public interface UserDao {

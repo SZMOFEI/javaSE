@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * @author com.mofei
- * @date 2020/6/6 23:48
+ * @version 2020/6/6 23:48
  */
 @Data
 public class User implements Serializable {

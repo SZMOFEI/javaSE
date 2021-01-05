@@ -1,0 +1,48 @@
+/** 
+ *
+ * @Title: ${className}Dto.java 
+ * @Package ${package}.controller.dto  
+ * @author ${author}  
+ * @version ${datetime}
+ * @version V1.0
+ * @Project:  skyway platform
+ * @Description: Copyright © 2019 SeiRobotics, All Rights Reserved.
+ *
+*/
+package ${package}.controller.dto;
+
+import com.mofei.base.dto.BaseDto;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import io.swagger.annotations.ApiModelProperty;
+
+/** 
+ *
+ * @Description: ${className}查询输出操作类
+ * @ClassName: ${className}QryOutput 
+ * @author ${author} 
+ * @version ${datetime}
+ * 
+*/
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
+public class ${className}OutVo extends BaseDto {
+
+
+#foreach ($column in $columns)
+
+	@ApiModelProperty(name = "$column.attrname", value = "$column.comments")
+	private $column.attrType $column.attrname;
+#end
+
+#foreach ($column in $columns)
+
+
+	public void set${column.attrName}($column.attrType $column.attrname) {
+		this.$column.attrname = $column.attrname;
+	}
+
+	public $column.attrType get${column.attrName}() {
+		return $column.attrname;
+	}	
+#end
+
+}

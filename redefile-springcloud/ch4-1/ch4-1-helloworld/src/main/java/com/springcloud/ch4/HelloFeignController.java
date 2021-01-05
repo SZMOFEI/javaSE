@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author mofei
- * @date 2020/10/21 19:55
+ * @version 2020/10/21 19:55
  */
 @RestController
 public class HelloFeignController {

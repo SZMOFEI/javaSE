@@ -2,7 +2,7 @@ package com.mofei.test.pattern.principle.single_principle.demo3;
 
 /**
  * @author com.mofei
- * @date 2020/4/19 4:49
+ * @version 2020/4/19 4:49
  */
 public class SinglePrinciple3 {
     public static void main(String[] args) {

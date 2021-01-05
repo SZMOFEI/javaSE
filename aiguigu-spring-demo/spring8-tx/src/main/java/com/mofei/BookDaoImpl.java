@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * @author mofei
- * @date 2020/9/10 20:36
+ * @version 2020/9/10 20:36
  */
 @Repository("bookDaoImpl")
 public class BookDaoImpl implements BookDao {

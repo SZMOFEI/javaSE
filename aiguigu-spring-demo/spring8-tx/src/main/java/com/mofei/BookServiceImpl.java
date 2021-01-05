@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author mofei
- * @date 2020/9/10 21:51
+ * @version 2020/9/10 21:51
  */
 @Service
 public class BookServiceImpl implements BookService {

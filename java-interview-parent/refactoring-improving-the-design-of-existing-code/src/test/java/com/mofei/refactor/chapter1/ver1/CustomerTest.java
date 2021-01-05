@@ -8,7 +8,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * @author mofei
- * @date 2020/12/30 10:45
+ * @version 2020/12/30 10:45
  */
 public class CustomerTest {
 

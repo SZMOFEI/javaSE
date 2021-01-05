@@ -1,0 +1,77 @@
+/**
+ *
+ *  @Title: ${className}Dto.java
+ *  @Package ${package}.controller.dto
+ *  @author ${author}
+ *  @version ${datetime}
+ *  @version V1.0
+ *  @Project:  skyway platform
+ *  @Description: Copyright © 2019 SeiRobotics, All Rights Reserved.
+ *
+ */
+package ${package}.controller.dto;
+
+import com.mofei.base.dto.BaseDto;
+import io.swagger.annotations.ApiParam;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
+import org.hibernate.validator.constraints.Length;
+#if(${uselombok} == 'true')
+import lombok.Getter;
+import lombok.Setter;
+#end
+
+/** 
+ *
+ * @Description: ${className}新增操作类
+ * @ClassName: ${className}AddInput 
+ * @author ${author} 
+ * @version ${datetime}
+ * 
+*/
+#if(${uselombok} == 'true')
+@Setter
+@Getter
+#end
+public class ${className}AddDto extends BaseDto {
+	
+
+
+#foreach ($column in $columns)
+#if($column.tableFixed == '')
+#if($column.columnName != $pk.columnName)
+#if($column.notNull == true)
+#if($column.attrType == "String")
+    @Length(max = $column.columnLength, message = "$column.comments不能超过{max}个字")
+    @NotEmpty(message="$column.comments不能为空")
+#else
+    @NotNull(message="$column.comments不能为空")
+#end
+	@ApiParam(name="$column.attrname",value = "$column.comments" , required = true)
+#else
+	@ApiParam(name="$column.attrname",value = "$column.comments" )
+#end
+	private $column.attrType $column.attrname;
+	
+#end
+#end
+#end
+
+
+#if(${uselombok} != 'true')
+#foreach ($column in $columns)
+#if($column.tableFixed == '')
+#if($column.columnName != $pk.columnName)
+
+	public void set${column.attrName}($column.attrType $column.attrname) {
+		this.$column.attrname = $column.attrname;
+	}
+
+	public $column.attrType get${column.attrName}() {
+		return $column.attrname;
+	}	
+#end
+#end
+#end
+#end
+}

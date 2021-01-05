@@ -4,7 +4,7 @@ import org.junit.Test;
 
 /**
  * @author com.mofei
- * @date 2020/3/27 7:33
+ * @version 2020/3/27 7:33
  */
 public class DoubleTest {
     @Test

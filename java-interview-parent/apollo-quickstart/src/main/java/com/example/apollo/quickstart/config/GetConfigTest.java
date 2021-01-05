@@ -5,7 +5,7 @@ import com.ctrip.framework.apollo.ConfigService;
 
 /**
  * @author com.mofei
- * @date 2020/3/18 8:37
+ * @version 2020/3/18 8:37
  */
 public class GetConfigTest {
     public static void main(String[] args) throws InterruptedException {

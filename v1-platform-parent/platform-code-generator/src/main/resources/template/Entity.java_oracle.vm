@@ -1,0 +1,42 @@
+package ${package}.entity;
+
+import java.util.Date;
+import com.xlcm.base.entity.BaseEntity;
+
+#if(${hasBigDecimal})
+import java.math.BigDecimal;
+#end
+
+/**
+ * ${comments}
+ * 
+ * @author ${author}
+ * @version ${datetime}
+ */
+public class ${className}  {
+	
+#foreach ($column in $columns)
+    #if($column.tableFixed == '')
+	//$column.comments
+	private $column.attrType $column.attrname;
+   #end	
+#end
+
+#foreach ($column in $columns)
+
+  #if($column.tableFixed == '')
+	/**
+	 * 设置：${column.comments}
+	 */
+	public void set${column.columnName}($column.attrType $column.attrname) {
+		this.$column.attrname = $column.attrname;
+	}
+	/**
+	 * 获取：${column.comments}
+	 */
+	public $column.attrType get${column.columnName}() {
+		return $column.attrname;
+	}
+  #end	
+#end
+}

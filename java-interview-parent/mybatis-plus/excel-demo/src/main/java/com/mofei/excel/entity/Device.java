@@ -2,7 +2,7 @@ package com.mofei.excel.entity;
 
 /**
  * @author mofei
- * @date 2020/11/24 17:10
+ * @version 2020/11/24 17:10
  */
 public class Device {
     private String sn ;

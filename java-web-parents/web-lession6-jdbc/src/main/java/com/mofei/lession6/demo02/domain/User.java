@@ -2,7 +2,7 @@ package com.mofei.lession6.demo02.domain;
 
 /**
  * @author com.mofei
- * @date 2018/12/30 21:20
+ * @version 2018/12/30 21:20
  */
 public class User {
     private String name;

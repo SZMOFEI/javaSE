@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 /**
  * @author com.mofei
- * @date 2020/3/25 23:50
+ * @version 2020/3/25 23:50
  */
 public class CollectionApiTest {
 
