@@ -2,8 +2,6 @@ package com.mofei.exception;
 
 import org.junit.Test;
 
-import java.net.BindException;
-
 /**
  * @Classname ExceptionDemo02
  * @Description

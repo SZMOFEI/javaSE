@@ -1,7 +1,5 @@
 package com.mofei.lession6.demo01;
 
-import java.sql.*;
-
 /**
  * JDBC的入门案例
  * @author com.mofei

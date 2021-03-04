@@ -1,5 +1,8 @@
-# java-samples工程 20201230更新
-名字的由来
+# (一)文本更新
+- java-parents工程 20210107更新
+- java-samples工程 20201230更新
+
+### 名字的由来
 
     取名为Java-samples ,就是Java过程中的demo。   
 工程目标：
@@ -25,7 +28,7 @@
 - 通过看文档能够review 以前写过的代码
 - 可以通过样例代码巩固掌握的知识点 
 
-# 项目结构说明
+# (二)项目结构说明
 
 
 
@@ -59,12 +62,16 @@
     - alibaba cloud 系列
     - 其他系列
     
-# 项目学习日志文档
+# (三)项目学习日志文档
+
+# 上一次执行到的部分 2021/3/4
+首先skyway-x在做高可用的情况下再继续，此刻重点在于JVM和JDK部分的内容。因此需要在3月份及时调整这部分的优先级。 
 
 # 目前计划
   
 [计划学习文档](https://alidocs.dingtalk.com/document/edit?dentryKey=RljJl244YsP2wyWd)
-
+- 2021年03月 jvm系列
+    - interview系列
 - 2020年9月 再次实现spring 源码
 - 2020年10月 JDK JVM 源码系列
 - 2020年11月 JDK JVM 源码系列
@@ -88,3 +95,4 @@
 # 端口安排
 skyway-device-service  8001
 skyway-user-service    8002
+

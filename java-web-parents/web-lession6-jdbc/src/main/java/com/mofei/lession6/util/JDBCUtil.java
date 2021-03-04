@@ -1,7 +1,5 @@
 package com.mofei.lession6.util;
 
-import java.sql.*;
-
 /**
  * @author com.mofei
  * @version 2018/12/30 22:07

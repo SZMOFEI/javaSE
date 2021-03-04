@@ -12,6 +12,7 @@
         <module>interview-core-sort</module>
         <module>design-pattern</module>
         <module>refactoring-improving-the-design-of-existing-code</module>
+        <module>jvm</module>
     </modules>
 
 

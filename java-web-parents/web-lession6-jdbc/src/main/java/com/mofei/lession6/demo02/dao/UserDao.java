@@ -3,8 +3,6 @@ package com.mofei.lession6.demo02.dao;
 import com.mofei.lession6.demo02.domain.User;
 import com.mofei.lession6.util.JDBCUtil;
 
-import java.sql.*;
-
 /**
  * @author com.mofei
  * @version 2018/12/30 21:18
