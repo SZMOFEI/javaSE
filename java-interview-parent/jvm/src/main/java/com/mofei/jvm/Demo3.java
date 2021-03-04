@@ -6,7 +6,7 @@ import java.util.concurrent.CountDownLatch;
  * @author mofei
  * @since 2021/3/4 11:57
  */
-public class CountDownLatchDemo {
+public class Demo3 {
     public static void main(String[] args) throws InterruptedException {
         CountDownLatch countDownLatch = new CountDownLatch(10);
         for (int i = 1; i < 11; i++) {
