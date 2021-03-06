@@ -11,7 +11,7 @@
 */
 package ${package}.controller.dto;
 
-import com.mofei.base.dto.BaseDto;
+import com.mofei.cainiao.base.dto.BaseDto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModelProperty;
 

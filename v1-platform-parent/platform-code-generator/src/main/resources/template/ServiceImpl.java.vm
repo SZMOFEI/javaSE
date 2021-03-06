@@ -12,7 +12,7 @@
 package ${package}.service.impl;
 
 import org.springframework.stereotype.Service;
-import com.mofei.base.servise.impl.BaseServiceImpl;
+import com.mofei.cainiao.base.servise.impl.BaseServiceImpl;
 import ${package}.entity.${className};
 import ${package}.repository.${className}Repository;
 import ${package}.service.I${className}Service;

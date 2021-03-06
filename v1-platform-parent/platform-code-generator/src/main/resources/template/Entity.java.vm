@@ -11,7 +11,7 @@
  */
 package ${package}.entity;
 
-import com.mofei.base.entity.BaseEntity;
+import com.mofei.cainiao.base.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;

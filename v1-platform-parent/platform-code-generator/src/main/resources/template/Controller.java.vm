@@ -18,8 +18,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.mofei.base.controller.BaseController;
-import com.mofei.base.exception.DataNotFoundException;
+import com.mofei.cainiao.base.controller.BaseController;
+import com.mofei.cainiao.base.exception.DataNotFoundException;
 
 import ${package}.controller.dto.${className}AddInput;
 import ${package}.controller.dto.${className}QryInput;

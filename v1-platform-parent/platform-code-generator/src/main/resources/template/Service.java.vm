@@ -11,7 +11,7 @@
  */
 package ${package}.service;
 
-import com.mofei.base.servise.BaseService;
+import com.mofei.cainiao.base.servise.BaseService;
 import ${package}.entity.${className};
 
 /** 

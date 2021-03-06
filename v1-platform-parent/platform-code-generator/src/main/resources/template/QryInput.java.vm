@@ -11,7 +11,7 @@
  */
 package ${package}.controller.dto;
 
-import com.mofei.base.dto.PageQryDto;
+import com.mofei.cainiao.base.dto.PageQryDto;
 import io.swagger.annotations.ApiParam;
 #if(${uselombok} == 'true')
 import lombok.Getter;
