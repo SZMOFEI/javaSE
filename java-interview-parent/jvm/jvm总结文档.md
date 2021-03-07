@@ -8,5 +8,6 @@
 https://www.runoob.com/java/java-basic-syntax.html
     - base  菜鸟编程系列
     - 序列化和transient的使用 
-- 手写一个阻塞队列,写一个生产者和消费者, 这个版本.MQ的底层原理
+- Callable的使用方式  2021/3/7
+- 手写一个阻塞队列,写一个生产者和消费者, 这个版本.MQ的底层原理  2021/3/6
 
