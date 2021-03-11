@@ -67,7 +67,7 @@ synchronize和reentrylock的区别
 
 ### 线程池
 实现多线程的多种方式
-- CallAble为什么没有提供Thread的构造参数   futureTask . 带返回值的多线程
+- CallAble为什么没有提供Thread的构造参数   futureTask 实现了Runable也是实现了Callable . 带返回值的多线程
 - CallAble的使用方式  . 装饰者模式的设计, 所以不需要提供一个Thread的构造函数 . 通过get可以获取返回值和异常
 
 线程池的种类
