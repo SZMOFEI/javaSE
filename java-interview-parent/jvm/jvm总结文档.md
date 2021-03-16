@@ -86,7 +86,10 @@ synchronize和reentrylock的区别
     - rejectExececptionHandle  拒绝策略
 线程池的底层工作原理是什么?
 
-
+- 死锁是什么？ 手写一个死锁 。 如何解决死锁问题
+    
+    `首先在多个线程，竞争资源的时候，相互等待的情况`
+    
 
 ### 阻塞 BlockingQueue 好处就是不用管阻塞和唤醒,实际上就是自动挡和手动挡的区别
 - countdownlatch用法
