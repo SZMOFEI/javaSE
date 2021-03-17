@@ -9,6 +9,6 @@
     <bean id="car" class="com.mofei.Car"  p:brand="Audi" p:price="400000"></bean>
 <!--    <bean id="car2" class="com.mofei.Car"  p:brand="Audi" p:price="400000"></bean>-->
 
-    <bean id="person" class="com.mofei.Person" p:name="mofei" p:age="11" p:car-ref="car" p:address-ref="address"></bean>
-    <bean id="person2" class="com.mofei.Person" p:name="mofei" autowire="byType" scope="prototype"></bean>
+<!--    <bean id="person" class="com.mofei.Person" p:name="mofei" p:age="11" p:car-ref="car" p:address-ref="address"></bean>-->
+    <bean id="person2" class="com.mofei.Person" lazy-init="false" p:name="mofei" autowire="byType" scope="singleton"></bean>
 </beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="person" class="com.mofei.Person">
+        <property name="address" ref="address"/>
+        <property name="car" ref="car"/>
+        <property name="name" value="mofei"/>
+        <property name="age" value="11"/>
+    </bean>
+    <bean id="address"  p:city="dalina" p:street="中山街" class="com.mofei.Address">
+
+    </bean>
+    <bean id="car" class="com.mofei.Car" p:brand="audi" p:price="100000">
+    </bean>
+
+</beans>

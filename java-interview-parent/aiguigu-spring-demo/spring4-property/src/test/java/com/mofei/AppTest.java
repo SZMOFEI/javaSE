@@ -1,5 +1,6 @@
 package com.mofei;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -33,5 +34,12 @@ public class AppTest {
         DataSource dataSource = context.getBean("dataSource2", DataSource.class);
         assertNotNull(dataSource);
         System.out.println("dataSource.toString() = " + dataSource.toString());
+    }
+
+    @Test
+    public void testDatasource3() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring3-scope.xml");
+        Object datasource3 = context.getBean("datasource3");
+        Assert.assertNotNull(datasource3);
     }
 }

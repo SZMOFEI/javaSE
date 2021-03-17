@@ -25,5 +25,11 @@ public class AppTest {
         context.close();
     }
 
-
+    @Test
+    public void testAddress() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring5-cycle.xml");
+        Address bean = context.getBean(Address.class);
+        System.out.println("bean = " + bean);
+        context.close();
+    }
 }

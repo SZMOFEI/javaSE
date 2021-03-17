@@ -24,4 +24,10 @@
         <property name="user" value="${prop.userName}"></property>
         <property name="password" value="${prop.password}"></property>
     </bean>
+    <bean id="datasource3" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="jdbcUrl" value="${prop.url}"></property>
+        <property name="driverClass" value="${prop.driverClass}"></property>
+        <property name="user" value="${prop.userName}"></property>
+        <property name="password" value="${prop.password}"></property>
+     </bean>
 </beans>
